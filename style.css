@@ -31,6 +31,8 @@ body{
     flex-direction: column;
     margin: 1rem;
     color: #fefefe;
+    text-align: center;
+
 }
 .card-deck{
     width: 100%;
@@ -40,12 +42,31 @@ body{
     flex-direction: row;
 
     flex-wrap: wrap;
+
 }
 .card{
     width: 360px;
     height: 220px;
 
     margin: 1rem;
+}
+.main-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+.left-panel{
+    color: #fefefe;
+    background-color: #090F26;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.right-panel{
+    width: 55%;
+    height: 100%;
 }
 @media only screen and (max-width: 860px) {
     .card-deck{
@@ -55,6 +76,12 @@ body{
         width: 250px;
         height: 130px;
     
+    }
+    .main-body{
+        flex-direction: column;
+    }
+    .left-panel{
+        width: 100%;
     }
     
   }
