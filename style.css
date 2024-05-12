@@ -99,6 +99,9 @@ body{
     font-size: 0.8em;
     font-weight: 300;
 }
+.profileText ul{
+    list-style-type: none; /* Listeden noktayı çıkarma */
+}
 .line {
     border-bottom: 1px solid #ccc; /* Renk ve kalınlık ayarlayabilirsiniz */
     margin-bottom: 20px; /* İsteğe bağlı, çizginin altındaki boşluğu ayarlar */
@@ -121,6 +124,9 @@ body{
         flex-direction: column;
     }
     .left-panel{
+        width: 100%;
+    }
+    .right-panel{
         width: 100%;
     }
     
