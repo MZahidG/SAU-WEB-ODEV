@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    height: 100vh;
+    overflow-y: auto;
+}
 .navbar {
     background-color: #090F26;
 }
@@ -18,16 +21,27 @@
 
 .about1 {
     color: #fefefe;
-    margin: 1rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.about1 h1 {
+    justify-content: center;
+    display: flex;
+    color: #2dd0f8;
+    margin-bottom: 1.5rem;
 }
 
 .about1 p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 
 .about1-button {
     width: 100%;
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .hobby {
@@ -37,7 +51,11 @@
     margin: 1rem;
     color: #fefefe;
     text-align: center;
+}
 
+.hobby h1 {
+    color: #2dd0f8;
+    margin-bottom: 1.5rem;
 }
 
 .card-deck {
@@ -46,16 +64,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-
     flex-wrap: wrap;
-
 }
 
 .card {
     width: 360px;
     height: 220px;
-
     margin: 1rem;
+}
+
+.card-img-top {
+    width: 100%;
+    /* Kart genişliği kadar genişlik */
+    height: 400px;
+    /* Sabit bir yükseklik */
+    object-fit: cover;
+    /* Resimleri orantılı şekilde sığdır */
 }
 
 .main-body {
@@ -66,10 +90,9 @@
 
 .left-panel {
     color: #fefefe;
-    /* background-color: #090F26; */
     background-color: #031149;
     width: 22%;
-    height: 100%;
+    height: auto;
     display: flex;
     padding-bottom: 20px;
     justify-content: center;
@@ -81,7 +104,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .profileText.imgBox {
@@ -106,6 +128,7 @@
     text-align: center;
     font-weight: 600;
     line-height: 1.4em;
+
 }
 
 .profileText h2 span {
@@ -115,9 +138,13 @@
 
 .main-body ul {
     list-style-type: none;
+    font-size: 1.55rem;
+
     /* Listeden noktayı çıkarma */
 }
-
+.surucuBelge ul{
+    font-size: 1.3rem;
+}
 .diller .percent {
     position: relative;
     width: 100%;
@@ -164,13 +191,14 @@
 
 .about2 p {
     color: #090F26;
+    font-size: 1.25rem;
 }
 
 .egitim ul {
     display: flex;
     list-style-type: none;
-    /* Listeden noktayı çıkarma */
     flex-direction: row;
+    /* Listeden noktayı çıkarma */
 }
 
 .egitim.yil {
@@ -188,6 +216,203 @@
     flex-direction: row;
 }
 
+.egitim h3 {
+    color: #03a9f4;
+}
+
+.yetenekler span.text {
+    font-size: 1.5rem;
+}
+
+.yetenekler .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.yetenekler .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+.bd-example{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    
+}
+/* Slider container genişliği */
+.carousel {
+    /* margin: auto; */
+    display: flex;
+    /* position: relative; */
+}
+
+/* Slider içindeki resimlerin boyutu ve ortalanması */
+.carousel-item img {
+    max-width: 100%; 
+    width: 1080px; 
+    height: 720px;
+    
+} 
+
+/* Carousel caption düzenlemeleri */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* yarı saydam siyah arka plan */
+    color: white;
+    /* yazı rengi */
+    text-align: left;
+    /* yazıların sola hizalanması */
+    padding: 20px;
+    /* içerik ve kenar boşluğu */
+}
+
+/* Aktif olmayan slider noktaları */
+.carousel-indicators li {
+    background-color: #777;
+    /* noktaların arka plan rengi */
+}
+
+/* Aktif slider noktası */
+.carousel-indicators .active {
+    background-color: #333;
+    /* aktif noktanın arka plan rengi */
+}
+.beysehir h1{
+    color: #03a9f4;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.beysehir p{
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.yemekler{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    color: #fefefe;
+    text-align: center;
+}
+.yemekler img{
+    display: flex;
+    height: 500px;
+}
+.yemekler h5{
+    font-size: 2rem;
+}
+.takim-button{
+    display: flex;
+    justify-content: center;
+}
+.takim {
+    display: flex;
+}
+
+.stadyum img {
+    display: flex;
+    width: 300px;
+    margin: 2rem;
+    height: 250px;
+}
+
+.konyaSpor h1 {
+    display: flex;
+    justify-content: center;
+    color: green;
+    padding-top: 1.5rem;
+}
+
+.konyaSpor {
+    padding-right: 6rem;
+    padding-left: 4rem;
+}
+
+.konyaSpor p {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.iletisimBody{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.iletisim{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.sol_iletisim, .sag_iletisim {
+    width: 100%;
+}
+
+.sol_iletisim h4 {
+    display: flex;
+    margin-top: 0;
+}
+
+.sag_iletisim form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sag_iletisim label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sag_iletisim input,
+.sag_iletisim textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sag_iletisim input[type="radio"] {
+    margin-right: 5px;
+}
+
+.sag_iletisim input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sag_iletisim input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
 @media only screen and (max-width: 860px) {
     .card-deck {
         flex-direction: column;
@@ -196,7 +421,6 @@
     .card {
         width: 250px;
         height: 130px;
-
     }
 
     .main-body {
@@ -210,4 +434,10 @@
     .right-panel {
         width: 100%;
     }
+
+    .takim {
+        width: 100%;
+        flex-direction: column;
+    }
+
 }
