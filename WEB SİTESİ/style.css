@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow-y: auto;
+}
+.navbar {
+    background-color: #090F26;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #3afa5a;
+}
+
+.about1 {
+    color: #fefefe;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.about1 h1 {
+    justify-content: center;
+    display: flex;
+    color: #2dd0f8;
+    margin-bottom: 1.5rem;
+}
+
+.about1 p {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.about1-button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hobby {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    color: #fefefe;
+    text-align: center;
+}
+
+.hobby h1 {
+    color: #2dd0f8;
+    margin-bottom: 1.5rem;
+}
+
+.card-deck {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 360px;
+    height: 220px;
+    margin: 1rem;
+}
+
+.card-img-top {
+    width: 100%;
+    /* Kart genişliği kadar genişlik */
+    height: 400px;
+    /* Sabit bir yükseklik */
+    object-fit: cover;
+    /* Resimleri orantılı şekilde sığdır */
+}
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.left-panel {
+    color: #fefefe;
+    background-color: #031149;
+    width: 22%;
+    height: auto;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileText.imgBox {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText.imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.main-body ul {
+    list-style-type: none;
+    font-size: 1.55rem;
+
+    /* Listeden noktayı çıkarma */
+}
+.surucuBelge ul{
+    font-size: 1.3rem;
+}
+.diller .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.diller .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+.line {
+    border-bottom: 1px solid #ccc;
+    /* Renk ve kalınlık ayarlayabilirsiniz */
+    margin-bottom: 20px;
+    /* İsteğe bağlı, çizginin altındaki boşluğu ayarlar */
+}
+
+.right-panel {
+    padding: 2.5rem;
+    width: 78%;
+}
+
+.about2 {
+    margin-bottom: 50px;
+}
+
+.about2:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #031147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about2 p {
+    color: #090F26;
+    font-size: 1.25rem;
+}
+
+.egitim ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    /* Listeden noktayı çıkarma */
+}
+
+.egitim.yil {
+    display: flex;
+    flex-direction: row;
+}
+
+.egitim.okul {
+    display: flex;
+    flex-direction: row;
+}
+
+.egitim.hazirlik {
+    display: flex;
+    flex-direction: row;
+}
+
+.egitim h3 {
+    color: #03a9f4;
+}
+
+.yetenekler span.text {
+    font-size: 1.5rem;
+}
+
+.yetenekler .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.yetenekler .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+.bd-example{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    
+}
+/* Slider container genişliği */
+.carousel {
+    /* margin: auto; */
+    display: flex;
+    /* position: relative; */
+}
+
+/* Slider içindeki resimlerin boyutu ve ortalanması */
+.carousel-item img {
+    max-width: 100%; 
+    width: 1080px; 
+    height: 720px;
+    
+} 
+
+/* Carousel caption düzenlemeleri */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* yarı saydam siyah arka plan */
+    color: white;
+    /* yazı rengi */
+    text-align: left;
+    /* yazıların sola hizalanması */
+    padding: 20px;
+    /* içerik ve kenar boşluğu */
+}
+
+/* Aktif olmayan slider noktaları */
+.carousel-indicators li {
+    background-color: #777;
+    /* noktaların arka plan rengi */
+}
+
+/* Aktif slider noktası */
+.carousel-indicators .active {
+    background-color: #333;
+    /* aktif noktanın arka plan rengi */
+}
+.beysehir h1{
+    color: #03a9f4;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.beysehir p{
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.yemekler{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    color: #fefefe;
+    text-align: center;
+}
+.yemekler img{
+    display: flex;
+    height: 500px;
+}
+.yemekler h5{
+    font-size: 2rem;
+}
+.takim-button{
+    display: flex;
+    justify-content: center;
+}
+.takim {
+    display: flex;
+}
+
+.stadyum img {
+    display: flex;
+    width: 300px;
+    margin: 2rem;
+    height: 250px;
+}
+
+.konyaSpor h1 {
+    display: flex;
+    justify-content: center;
+    color: green;
+    padding-top: 1.5rem;
+}
+
+.konyaSpor {
+    padding-right: 6rem;
+    padding-left: 4rem;
+}
+
+.konyaSpor p {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.containeriletisim{
+    min-height: 100vh;
+    background: #08071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("iletisimback.jpg") no-repeat center center/cover;
+}
+
+.containeriletisim form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.containeriletisim form h1{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.containeriletisim form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.containeriletisim form input::placeholder{
+    color: #ddd;
+}
+
+.containeriletisim form #lastName,
+.containeriletisim form #mobile{
+    margin-left: 20px;
+}
+
+.containeriletisim form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194,194,194,0.713);
+}
+
+.containeriletisim form #buttoniletisim{
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.containeriletisim form #buttoniletisim:hover{
+    opacity: 0.7;
+}
+
+.girisBody{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #090F26, #6A82FB);
+}
+.login-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #090F26;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #090F26;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f4f4f4;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #090F26;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-container button:hover {
+    background: #070c1a;
+}
+
+.login-container p {
+    margin-top: 20px;
+    color: #666;
+}
+
+.login-container a {
+    color: #6A82FB;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 860px) {
+    .card-deck {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 250px;
+        height: 130px;
+    }
+
+    .main-body {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+    }
+
+    .right-panel {
+        width: 100%;
+    }
+
+    .takim {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    
+}
