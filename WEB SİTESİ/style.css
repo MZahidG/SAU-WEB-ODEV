@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
     overflow-y: auto;
 }
+
 .navbar {
     background-color: #090F26;
 }
@@ -82,6 +84,25 @@ body{
     /* Resimleri orantılı şekilde sığdır */
 }
 
+.containerApi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerApi h1 {
+    color: #3afa5a;
+}
+
+.buttonApi {
+    color: #fff;
+    background-color: #03a9f4;
+}
+
+#results {
+    color: #fff;
+}
+
 .main-body {
     display: flex;
     flex-direction: row;
@@ -142,9 +163,11 @@ body{
 
     /* Listeden noktayı çıkarma */
 }
-.surucuBelge ul{
+
+.surucuBelge ul {
     font-size: 1.3rem;
 }
+
 .diller .percent {
     position: relative;
     width: 100%;
@@ -240,14 +263,16 @@ body{
     height: 100%;
     background-color: #03a9f4;
 }
-.bd-example{
+
+.bd-example {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     margin-top: 5rem;
-    
+
 }
+
 /* Slider container genişliği */
 .carousel {
     /* margin: auto; */
@@ -257,11 +282,11 @@ body{
 
 /* Slider içindeki resimlerin boyutu ve ortalanması */
 .carousel-item img {
-    max-width: 100%; 
-    width: 1080px; 
+    max-width: 100%;
+    width: 1080px;
     height: 720px;
-    
-} 
+
+}
 
 /* Carousel caption düzenlemeleri */
 .carousel-caption {
@@ -286,14 +311,16 @@ body{
     background-color: #333;
     /* aktif noktanın arka plan rengi */
 }
-.beysehir h1{
+
+.beysehir h1 {
     color: #03a9f4;
     margin-bottom: 2rem;
     margin-top: 5rem;
     display: flex;
     justify-content: center;
 }
-.beysehir p{
+
+.beysehir p {
     color: #fff;
     font-size: 1.5rem;
     display: flex;
@@ -301,7 +328,29 @@ body{
     margin-left: 3rem;
     margin-right: 3rem;
 }
-.yemekler{
+
+.akyokus {
+    margin-bottom: 8rem;
+}
+
+.akyokus h1 {
+    color: #03a9f4;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.akyokus p {
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.yemekler {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -309,17 +358,31 @@ body{
     color: #fefefe;
     text-align: center;
 }
-.yemekler img{
+
+.yemekler img {
     display: flex;
     height: 500px;
 }
-.yemekler h5{
+
+.yemekler,
+row h1 {
+    color: #3afa5a;
+}
+
+.yemekler h5 {
     font-size: 2rem;
 }
-.takim-button{
+
+.btn {
+    margin-bottom: 3rem;
+
+}
+
+.takim-button {
     display: flex;
     justify-content: center;
 }
+
 .takim {
     display: flex;
 }
@@ -348,7 +411,7 @@ body{
     font-size: 1.5rem;
 }
 
-.containeriletisim{
+.containeriletisim {
     min-height: 100vh;
     background: #08071d;
     display: flex;
@@ -357,19 +420,19 @@ body{
     background: url("iletisimback.jpg") no-repeat center center/cover;
 }
 
-.containeriletisim form{
+.containeriletisim form {
     width: 670px;
     height: 400px;
     display: flex;
     justify-content: center;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     flex-wrap: wrap;
 }
 
-.containeriletisim form h1{
+.containeriletisim form h1 {
     color: #fff;
     font-weight: 500;
     margin-top: 20px;
@@ -377,7 +440,7 @@ body{
     text-align: center;
 }
 
-.containeriletisim form input{
+.containeriletisim form input {
     width: 290px;
     height: 40px;
     padding-left: 10px;
@@ -389,16 +452,16 @@ body{
     border-bottom: 2px solid #fff;
 }
 
-.containeriletisim form input::placeholder{
+.containeriletisim form input::placeholder {
     color: #ddd;
 }
 
 .containeriletisim form #lastName,
-.containeriletisim form #mobile{
+.containeriletisim form #mobile {
     margin-left: 20px;
 }
 
-.containeriletisim form textarea{
+.containeriletisim form textarea {
     background: none;
     border: none;
     border-bottom: 2px solid #fff;
@@ -413,15 +476,15 @@ body{
     max-height: 80px;
 }
 
-textarea::-webkit-scrollbar{
+textarea::-webkit-scrollbar {
     width: 1em;
 }
 
-textarea::-webkit-scrollbar-thumb{
-    background-color: rgba(194,194,194,0.713);
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(194, 194, 194, 0.713);
 }
 
-.containeriletisim form #buttoniletisim{
+.containeriletisim form #buttoniletisim {
     border: none;
     background: #fff;
     border-radius: 5px;
@@ -436,21 +499,30 @@ textarea::-webkit-scrollbar-thumb{
     transition: 0.3s;
 }
 
-.containeriletisim form #buttoniletisim:hover{
+.containeriletisim form #buttoniletisim:hover {
     opacity: 0.7;
 }
 
-.girisBody{
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
+.buttonForm{
     display: flex;
+    
+}
+
+.buttonTemizle{
+    margin-right: 10rem;
+}
+.girisBody {
+    height: 100vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background: linear-gradient(135deg, #090F26, #6A82FB);
+    margin-top: 0;
+    padding-top: 0;
 }
+
 .login-container {
+    font-family: 'Arial', sans-serif;
     background: #fff;
     padding: 40px;
     border-radius: 10px;
@@ -459,6 +531,7 @@ textarea::-webkit-scrollbar-thumb{
     width: 100%;
     max-width: 400px;
 }
+
 .login-container h2 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -511,6 +584,8 @@ textarea::-webkit-scrollbar-thumb{
     text-decoration: underline;
 }
 
+
+
 @media only screen and (max-width: 860px) {
     .card-deck {
         flex-direction: column;
@@ -538,5 +613,76 @@ textarea::-webkit-scrollbar-thumb{
         flex-direction: column;
     }
 
-    
+    .carousel {
+        max-height: 700px;
+        max-width: 500px;
+    }
+
+    .containeriletisim {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form {
+        margin: 1rem;
+
+    }
+
+    .login-container {
+        width: 100%;
+        display: contents;
+        flex-direction: column;
+    }
+
+    .text-center {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15rem;
+    }
+}
+
+/* iletişim responsive kodu */
+@media only screen and (max-width: 768px) {
+    .containeriletisim form {
+        width: 90%;
+        height: auto;
+    }
+
+    .containeriletisim form h1 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .containeriletisim form input,
+    .containeriletisim form textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .containeriletisim form textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .containeriletisim form #buttoniletisim {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .containeriletisim form h1 {
+        font-size: 1.2rem;
+    }
+
+    .containeriletisim form input,
+    .containeriletisim form textarea {
+        font-size: 14px;
+    }
+
+    .containeriletisim form #buttoniletisim {
+        font-size: 18px;
+    }
 }
